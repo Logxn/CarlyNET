@@ -15,7 +15,7 @@ namespace CarlyNET
             _req = new RequestClient();
         }
 
-        public void Login(string username, string password)
+        public CarlyUser Login(string username, string password)
         {
             var loginBody = new LoginRequest
             {
@@ -25,6 +25,8 @@ namespace CarlyNET
 
             var resp = _req.Post("/users/login", loginBody);
             var respParsed = JsonConvert.DeserializeObject<LoginResponse>(resp);
+
+            return new CarlyUser(respParsed);
         }
     }
 }
