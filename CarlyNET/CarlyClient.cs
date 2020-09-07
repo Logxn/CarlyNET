@@ -1,5 +1,4 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using CarlyNET.Request;
 using CarlyNET.Body;
 using CarlyNET.Body.Response;
