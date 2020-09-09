@@ -51,7 +51,9 @@
     <Compile Include="Body\BaseRequest.cs" />
     <Compile Include="Body\LoginRequest.cs" />
     <Compile Include="Body\Response\LoginResponse.cs" />
+    <Compile Include="Body\Response\SyncResponse.cs" />
     <Compile Include="Body\Response\VerifiedPurchasesResponse.cs" />
+    <Compile Include="Body\SyncRequest.cs" />
     <Compile Include="Body\VerifiedPurchasesRequest.cs" />
     <Compile Include="CarlyClient.cs" />
     <Compile Include="CarlySubscription.cs" />

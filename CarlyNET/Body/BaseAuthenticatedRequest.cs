@@ -2,12 +2,8 @@
 
 namespace CarlyNET.Body
 {
-    internal class BaseAuthenticatedRequest
+    internal class BaseAuthenticatedRequest : BaseRequest
     {
-        [JsonProperty("key")]
-        public string Key { get; set; }
-        [JsonProperty("ad_id")]
-        public string AdId { get; set; }
         [JsonProperty("login_token")]
         public string LoginToken { get; set; }
     }

@@ -56,13 +56,22 @@ namespace CarlyNET.Request
 
             var body = JsonConvert.SerializeObject(content);
 
+#if DEBUG
+            Console.WriteLine($"[Request => {endpoint}]");
+            Console.WriteLine(body + Environment.NewLine);
+#endif
+
             request.AddParameter("application/json", body, ParameterType.RequestBody);
 
             var resp = _restClient.Post(request);
 
             if (resp.StatusCode != HttpStatusCode.OK)
                 throw new Exception("Internal Error");
-                
+
+#if DEBUG
+            Console.WriteLine($"[Response <= {endpoint}]");
+            Console.WriteLine(resp.Content + Environment.NewLine);
+#endif
             return resp.Content;
         }
 
