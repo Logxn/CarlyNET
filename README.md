@@ -3,9 +3,9 @@ A .NET API Wrapper For [Carly](https://www.mycarly.com/)!
 
 ### Currently Supported Features
 - [X] Login
+- [X] Check if user has a subscription
 
 ### Planned Features
-- [ ] Check if user has a subscription
 - [ ] List all diagnosis reports
 - [ ] Download specific diagnosis reports
 - [ ] Download adapter firmare (Might take a while!)
